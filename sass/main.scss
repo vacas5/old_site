@@ -38,6 +38,10 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
     color: $blue;
 }
 
+#{$all-buttons} {
+    font-family: $heading-font-family;
+}
+
 .main_body {
     background-color: $base-background-color;
     @include media($medium-screen-up) {
@@ -119,7 +123,7 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
     margin-top: 3rem;
 }
 
-.button_link {
+.button, html .button {
     @extend #{$all-buttons};
-    font-family: $heading-font-family;
+    -webkit-appearance: none;
 }
