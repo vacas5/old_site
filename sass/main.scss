@@ -43,6 +43,8 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
 }
 
 .main_body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: $base-background-color;
     @include media($medium-screen-up) {
         background-image: url(https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/sea.jpg);
@@ -52,25 +54,32 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
     }
 }
 
-.container {
+.wrapper {
     @include outer-container;
+}
+
+.container {
+    @include span-columns(12);
     background-color: $white;
     padding: 2rem;
     @include media($medium-screen-up) {
+        //margin-bottom: 6rem;
+        //border-radius: rem(4);
+    }
+    @include media(min-width 68em) {
         margin-bottom: 6rem;
         border-radius: rem(4);
     }
 }
 
 .content {
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
         @include span-columns(5);
-        //@include shift(3);
     }
 }
 
 .positions {
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
         @include span-columns(5);
         @include shift(1);
     }
@@ -81,10 +90,13 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
     padding: 2rem;
     margin-bottom: 0.5rem;
     color: $white;
+    @include span-columns(12);
     @include media($medium-screen-up) {
         font-size: 3rem;
-        padding: 4rem;
         text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+    }
+    @include media(min-width 68em) {
+        padding-left: 0;
     }
 }
 
