@@ -1,25 +1,6 @@
 @import "normalize";
 @import "bourbon/bourbon";
 @import "base/variables";
-
-$base-font-family: 'Merriweather', serif;
-$heading-font-family: 'Lato', sans-serif;
-
-$blue: #3C6487;
-$medium-gray: #4E4F48;
-$light-gray: #EDF2F4;
-$green: #96A63E;
-$black: #05100E;
-$white: #F3F2F4;
-
-$base-font-color: $medium-gray;
-$action-color: $green;
-
-$base-background-color: $black;
-
-$base-border-color: $blue;
-$base-border: 1px solid $base-border-color;
-
 // Neat Settings -- uncomment if using Neat -- must be imported before Neat
 @import "base/grid-settings";
 
@@ -38,13 +19,7 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
     color: $blue;
 }
 
-#{$all-buttons} {
-    font-family: $heading-font-family;
-}
-
 .main_body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: $base-background-color;
     @include media($medium-screen-up) {
         background-image: url(https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/sea.jpg);
@@ -62,10 +37,6 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
     @include span-columns(12);
     background-color: $white;
     padding: 2rem;
-    @include media($medium-screen-up) {
-        //margin-bottom: 6rem;
-        //border-radius: rem(4);
-    }
     @include media(min-width 68em) {
         margin-bottom: 6rem;
         border-radius: rem(4);
@@ -137,5 +108,4 @@ $large-screen-up: new-breakpoint(min-width $large-screen);
 
 .button, html .button {
     @extend #{$all-buttons};
-    -webkit-appearance: none;
 }
