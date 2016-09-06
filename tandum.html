@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Russell J. Anderson, Web Developer</title>
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/RJA-Badge.png">
+    <meta property="og:title" content="Russell J. Anderson, Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://russelljanderson.com" />
+    <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/sitecap.jpg" />
+
+
+    <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="main_body">
+    <div class="wrapper">
+        <h1 class="title">Tandum Management Portal</h1>
+        <section class="container">
+            <div class="show_wrapper">
+                <div id="show" class="show">
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/choose-venue.jpg" alt="account selection"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/events.jpg" alt="event listing"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/event-overview.jpg" alt="event overview"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/event-builder.jpg" alt="event builder"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/report-1.jpg" alt="reporting example 1"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/report-2.jpg" alt="reporting example 2"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/offers.jpg" alt="offer listing"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/offer-builder.jpg" alt="offer builder"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/box-office-1.jpg" alt="box office example 1"></div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/russelljanderson-dev/static/box-office-2.jpg" alt="box office example 2"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [
+            'Lato:400,700:latin',
+            'Merriweather:400,400italic,700,700italic:latin'
+        ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+        $('#show').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            //adaptiveHeight: true,
+            arrows: true
+        });
+    </script>
+</body>
+</html>
